@@ -19,7 +19,15 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:parentActivityName=".Main2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teamawesome.collabapp.Main2Activity" />
         </activity>
     </application>
 
