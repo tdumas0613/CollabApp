@@ -7,5 +7,5 @@
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_main4">Main4Activity</string>
     <string name="btn_to_one">Screen 1</string>
-    <string name="screen4_text">Welcome to the fourth screen! Here's a picture of a bulldog for your efforts!</string>
+    <string name="screen4_text">Welcome to the fourth screen! Here\'s a picture of a bulldog for your efforts!</string>
 </resources>
