@@ -1,9 +1,12 @@
 package com.example.teamawesome.collabapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 //created by taylor
 public class Main2Activity extends AppCompatActivity {
 
@@ -33,5 +36,11 @@ public class Main2Activity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //added by Louis; sends to screen 3
+    public void sendToSecondScreen3(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        startActivity(intent);
     }
 }
