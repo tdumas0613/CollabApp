@@ -1,9 +1,13 @@
 package com.example.teamawesome.collabapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class Main3Activity extends AppCompatActivity {
 
@@ -12,6 +16,7 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,5 +38,16 @@ public class Main3Activity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void makeToast (View view){
+
+        Toast.makeText(getApplicationContext(), "My screen is the best!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void sendToScreen (View view){
+
+        Intent intent = new Intent(this, Main4Activity.class);
+        startActivity(intent);
     }
 }
